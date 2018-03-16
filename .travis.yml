@@ -8,4 +8,4 @@ addons:
 install:
   - pip install html5validator
 script:
-  - html5validator index.html --ignore charset --show-warnings
+  - html5validator index.html
