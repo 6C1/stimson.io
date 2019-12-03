@@ -1,20 +1,21 @@
 html,
 body {
-  height: 100%;
+    height: 100%;
 }
 
 body {
-  display: -ms-flexbox;
-  display: -webkit-box;
-  display: flex;
-  width: 100%;
-  -ms-flex-pack: center;
-  -webkit-box-pack: center;
-  justify-content: center;
-  font-family: 'Forum', sans-serif;
-  color: #cbcdff;
-  background: linear-gradient(50deg, #007300, #006600);
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    width: 100%;
+    -ms-flex-pack: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    font-family: 'Forum', sans-serif;
+    color: #cbcdff;
+    background: linear-gradient(50deg, #007300, #006600);
 }
+
 body:after {
     content: "";
     display: inline-block;
@@ -26,59 +27,67 @@ body:after {
     right: 0;
     z-index: -1;
 }
+
 @media only screen and (max-width: 399px) {
     body:after {
-	width: 11rem;
-	height: 11rem;
+        width: 11rem;
+        height: 11rem;
     }
 }
+
 @media only screen and (min-width: 400px) {
     body:after {
-	width: 23rem;
-	height: 23rem;
+        width: 23rem;
+        height: 23rem;
     }
 }
+
 @media only screen and (min-width: 992px) {
     body:after {
-	width: 31rem;
-	height: 31rem;
+        width: 31rem;
+        height: 31rem;
     }
 }
+
 @media only screen and (min-width: 1200px) {
     body:after {
-	width: 42rem;
-	height: 42rem;
+        width: 42rem;
+        height: 42rem;
     }
 }
 
 
 h1, h2, h3 {
-  font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
 }
+
 h1 {
     color: #ff9a66;
     transition-property: transform;
     transition-duration: 0.3s;
     transition-timing-function: ease-in-out;
 }
+
 h1:hover {
-    transform: scale(1.05,1.05);
+    transform: scale(1.05, 1.05);
     transform-duration: 0.1s;
 }
 
 .main-container {
     width: 100%;
-    margin-top: 1rem;
+    padding-top: 1rem;
 }
+
 .cover {
-  max-width: 31em;
-  padding: 0 1.5rem;
-  margin: 0 auto;
-  padding: 0!important;
+    max-width: 31em;
+    padding: 0 1.5rem;
+    margin: 0 auto;
+    padding: 0 !important;
 }
+
 .cover .btn-lg {
-  padding: .75rem 1.25rem;
-  font-weight: 700;
+    padding: .75rem 1.25rem;
+    font-weight: 700;
 }
 
 .mastfoot {
@@ -88,6 +97,7 @@ h1:hover {
     background-color: #004C00;
     color: #ff9a66;
 }
+
 .mastfoot a {
     color: #cbcdff;
 }
