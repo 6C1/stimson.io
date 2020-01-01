@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="{% block html_lang %}{{ DEFAULT_LANG }}{% endblock html_lang %}">
+<head>
+    {% block head %}
+    <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/style.css"/>
+    {% endblock head %}
+</head>
+
+<body id="index" class="home">
+<header id="banner" class="body">
+    <h1><a href="{{ SITEURL }}/">{{ SITENAME }}{{ SITENAME }}{{ SITENAME }} <strong>{{ SITESUBTITLE }}</strong></a></h1>
+</header>
+<!-- /#banner -->
+<nav id="menu">
+    <ul>
+        {% for title, link in MENUITEMS %}
+        <li {% if p== page %} class="active" {% endif %}>
+            <a href="{{ link }}">
+                <strong>{{ title.lower() }}</strong>
+            </a>
+        </li>
+        {% endfor %}
+        {% if DISPLAY_PAGES_ON_MENU %}
+        {% for p in pages %}
+        <li {% if p== page %} class="active" {% endif %}>
+            <a href="{{ SITEURL }}/{{ p.url }}">
+                <strong>{{ p.title.lower() }}</strong>
+            </a>
+        </li>
+        {% endfor %}
+        {% endif %}
+    </ul>
+</nav>
+<hr>
+<!-- /#menu -->
+<div id="content">
+    {% block content %}
+    {% endblock %}
+</div>
+<hr>
+<footer id="contentinfo" class="body">
+    <ul>
+        <li>© {{ CURRENTYEAR }} <a href="/">Cooper Stimson</a></li>
+        <li>
+            Built with <a href="http://getpelican.com/">Pelican</a>
+        </li>
+    </ul>
+</footer><!-- /#contentinfo -->
+</body>
+</html>

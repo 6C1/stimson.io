@@ -1,0 +1,17 @@
+{% extends "!simple/tags.html" %}
+
+{% block content %}
+    <h1>Tags</h1>
+    <ul class="tagcloud">
+        {% for tag in tag_cloud %}
+            <li class="tag-{{ tag.1 }}">
+                <a href="{{ SITEURL }}/{{ tag.0.url }}">
+                {{ tag.0 }}
+                    {% if TAG_CLOUD_BADGE %}
+                        <span class="tag-badge">({{ tag.2 }})</span>
+                    {% endif %}
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}

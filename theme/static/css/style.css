@@ -1,0 +1,156 @@
+html {
+    min-height: 100%;
+}
+
+body {
+    /*font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+    font-family: 'Noto Serif', Menlo, Consolas, "Courier New", monospace;
+    font-size: 100%;
+    font-weight: 300;
+    letter-spacing: -0.009em;
+    color: black;
+    width: 80%;
+    height: 100%;
+    min-width: 300px;
+    margin: 0 10%;
+    padding: 0;
+    display: block;
+    background: white linear-gradient(50deg, white, #FAFAFA);
+}
+
+#background {
+   position: absolute;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   right: 0;
+   z-index: -1;
+   overflow: hidden;
+}
+
+a:link    { color: firebrick; text-decoration: none;      }
+a:hover   { color: firebrick; text-decoration: underline; }
+a:visited { color: firebrick;                             }
+
+blockquote {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 90%;
+    font-style: italic;
+}
+
+h1 { font-size: 64px }
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Arial Black", Arial, sans-serif;
+    letter-spacing: -0.12em;
+    text-transform: uppercase;
+    color: #ff2f00;
+}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { color: inherit !important }
+
+p strong {
+    /*font-family: "Arial Black", Arial, sans-serif;*/
+    letter-spacing: -0.07em;
+    font-weight: 900;
+    color: #ff2f00;
+}
+
+ul.simple { list-style: none; }
+ul.simple li::before {
+    content: "☞";
+    font-size: 150%;
+    padding-right: 10px;
+    color: #ff2f00;
+}
+
+h2.entry-title a {
+    font-size: 150%;
+}
+
+#banner {
+	margin: 0 auto;
+	padding: 2.5em 0 0 0;
+}
+#banner h1 {
+    font-size: 4.8vw;
+    letter-spacing: -0.03em;
+    font-weight: 100;
+    font-family: Arial, sans-serif;
+}
+
+footer {
+    font-size: 80%;
+    color: dimgrey;
+}
+footer li { display: inline; }
+footer li + li:before {
+    content: "✻ ";
+}
+footer#contentinfo {
+    margin-top: 61px;
+    text-align: center;
+}
+
+#menu ul::before { content: "( "; }
+
+#menu ul::after { content: " )"; }
+
+#menu li {
+    display: inline;
+}
+
+#menu li a {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: 900;
+    font-style: oblique;
+}
+
+#active a:link {
+    color: black;
+}
+
+#menu li + li:before {
+    content: "✻";
+}
+
+#post-list {
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+pre {
+    margin: 2em 1em 2em 4em;
+    white-space: pre-wrap;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 3px double #ff2f00;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/* Tag Cloud stuff */
+
+ul.tagcloud {
+    list-style: none;
+    padding: 0;
+}
+
+ul.tagcloud li {
+    display: inline-block;
+}
+
+li.tag-1 {
+    font-size: 150%;
+}
+
+li.tag-2 {
+    font-size: 120%;
+}
+
+.tag-badge {
+    background-color: grey;
+    color: white;
+}
