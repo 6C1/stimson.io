@@ -2,18 +2,19 @@
 :url:
 :status: hidden
 
-Hi, I'm **Cooper Stimson**.
+Hi, I'm **Cooper Stimson** (`he/him`_).
 
 .. image:: images/headshot_bw.jpg
     :height: 161
 
-* `He/Him`_
-* Technologist
-* Internet resident
+I'm a software engineer specializing in cloud architecture and infrastructure.
 
-These days I do data infrastructure for `Clover Health`_, a unicorn healthtech startup. I received a Bachelor of Arts
-degree in mathematics from `Dartmouth College`_, where I focused on number theory.
+I'm on the machine learning data intelligence team at `Square`_. Previously, I've done data infrastructure at the health
+startups `Clover Health`_ and `Stride Health`_. I received a Bachelor of Arts degree in mathematics from
+`Dartmouth College`_, where I focused on number theory.
 
-.. _He/Him:  https://pronoun.is/he/him/his/his/himself
+.. _he/him:  https://pronoun.is/he/him/his/his/himself
+.. _Square: https://squareup.com
 .. _Clover Health: https://technology.cloverhealth.com
+.. _Stride Health: https://stridehealth.com
 .. _Dartmouth College:  https://math.dartmouth.edu
